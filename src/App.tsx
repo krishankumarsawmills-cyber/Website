@@ -15,7 +15,7 @@ const PRODUCT_CATEGORIES = [
   {
     title: "Premium Plywood",
     description: "High-density plywood with superior resistance to water and termites. Ideal for all commercial and residential architectural projects.",
-    image: "/regenerated_image_1777394122888.png",
+    image: "./regenerated_image_1777394122888.png",
     features: ["BWP Grade", "Calibrated Core", "Anti-Termite Treatment"]
   },
   {
@@ -73,7 +73,7 @@ export default function App() {
           >
             <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-inner overflow-hidden border-2 border-forest-mid p-1">
               <img 
-                src="/regenerated_image_1777394125920.png"
+                src="./regenerated_image_1777394125920.png"
                 alt="Logo" 
                 className="w-full h-full object-contain"
               />
@@ -279,14 +279,14 @@ export default function App() {
             <div className="relative group perspective-1000">
               <div className="aspect-[4/5] rounded-[40px] overflow-hidden relative border border-cream/10 animate-float animate-pulse-glow">
                 <img 
-                  src="/regenerated_image_1777394117210.png" 
+                  src="./regenerated_image_1777394117210.png" 
                   alt="Timber Processing" 
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-forest-dark/40 group-hover:bg-forest-dark/20 transition-all duration-700" />
                 <div className="absolute inset-0 flex items-center justify-center">
                    <img 
-                     src="/regenerated_image_1777394125920.png"
+                     src="./regenerated_image_1777394125920.png"
                      className="w-48 h-48 opacity-40 filter drop-shadow-xl"
                      alt="Watermark logo"
                    />
@@ -471,7 +471,7 @@ export default function App() {
             <div className="flex items-center space-x-4 opacity-100 bg-white/20 p-2 pr-6 rounded-full">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1">
                 <img 
-                  src="/regenerated_image_1777394125920.png"
+                  src="./regenerated_image_1777394125920.png"
                   className="w-full h-full object-contain"
                   alt="Logo grayscale"
                 />
