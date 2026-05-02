@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Playfair Display", serif;
+  
+  --color-forest-dark: #092114;
+  --color-forest-mid: #15452C;
+  --color-forest-light: #2E754B;
+  --color-sage: #A1BFAA;
+  --color-cream: #FBFCFB;
+  --color-wood-accent: #C48E60;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-cream text-forest-dark font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight text-forest-dark;
+  }
+}
+
+.forest-gradient {
+  background: linear-gradient(135deg, var(--color-forest-dark) 0%, var(--color-forest-mid) 100%);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-15px) scale(1.02); }
+  100% { transform: translateY(0px) scale(1); }
+}
+
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 20px rgba(46, 117, 75, 0.2); }
+  50% { box-shadow: 0 0 50px rgba(46, 117, 75, 0.5); }
+  100% { box-shadow: 0 0 20px rgba(46, 117, 75, 0.2); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s infinite;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-forest-dark) 0%, var(--color-forest-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
